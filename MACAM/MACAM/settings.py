@@ -83,8 +83,8 @@ WSGI_APPLICATION = 'MACAM.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'constat',
-        'USER': 'postgres',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_PASSWORD'),
         'PASSWORD': 'root',
         'HOST': '',
         'PORT': '5432',
